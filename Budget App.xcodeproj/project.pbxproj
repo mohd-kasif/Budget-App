@@ -10,9 +10,9 @@
 		4B44DA402C286850008DFDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA3F2C286850008DFDAD /* AppDelegate.swift */; };
 		4B44DA422C286850008DFDAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA412C286850008DFDAD /* SceneDelegate.swift */; };
 		4B44DA442C286850008DFDAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA432C286850008DFDAD /* ViewController.swift */; };
-		4B44DA472C286850008DFDAD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B44DA462C286850008DFDAD /* Base */; };
 		4B44DA492C286852008DFDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B44DA482C286852008DFDAD /* Assets.xcassets */; };
 		4B44DA4C2C286852008DFDAD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B44DA4B2C286852008DFDAD /* Base */; };
+		4B44DA552C286C56008DFDAD /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		4B44DA3F2C286850008DFDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B44DA412C286850008DFDAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B44DA432C286850008DFDAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B44DA462C286850008DFDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B44DA482C286852008DFDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B44DA4B2C286852008DFDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B44DA4D2C286853008DFDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B44DA542C286C56008DFDAD /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 				4B44DA3F2C286850008DFDAD /* AppDelegate.swift */,
 				4B44DA412C286850008DFDAD /* SceneDelegate.swift */,
 				4B44DA432C286850008DFDAD /* ViewController.swift */,
-				4B44DA452C286850008DFDAD /* Main.storyboard */,
 				4B44DA482C286852008DFDAD /* Assets.xcassets */,
 				4B44DA4A2C286852008DFDAD /* LaunchScreen.storyboard */,
 				4B44DA4D2C286853008DFDAD /* Info.plist */,
+				4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */,
 			);
 			path = "Budget App";
 			sourceTree = "<group>";
@@ -127,7 +127,6 @@
 			files = (
 				4B44DA492C286852008DFDAD /* Assets.xcassets in Resources */,
 				4B44DA4C2C286852008DFDAD /* Base in Resources */,
-				4B44DA472C286850008DFDAD /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B44DA552C286C56008DFDAD /* BudgetModel.xcdatamodeld in Sources */,
 				4B44DA442C286850008DFDAD /* ViewController.swift in Sources */,
 				4B44DA402C286850008DFDAD /* AppDelegate.swift in Sources */,
 				4B44DA422C286850008DFDAD /* SceneDelegate.swift in Sources */,
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B44DA452C286850008DFDAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B44DA462C286850008DFDAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B44DA4A2C286852008DFDAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +289,7 @@
 				INFOPLIST_FILE = "Budget App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +297,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Budget-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,9 +319,7 @@
 				INFOPLIST_FILE = "Budget App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +327,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Budget-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +359,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B44DA542C286C56008DFDAD /* BudgetModel.xcdatamodel */,
+			);
+			currentVersion = 4B44DA542C286C56008DFDAD /* BudgetModel.xcdatamodel */;
+			name = BudgetModel.xcdatamodeld;
+			path = "/Users/kashif/Desktop/Budget App/Budget App/BudgetModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B44DA342C286850008DFDAD /* Project object */;
 }
