@@ -6,9 +6,17 @@
 //
 
 import UIKit
-
+import CoreData
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    lazy var container:NSPersistentContainer={
+       let container=NSPersistentContainer(name: "BudgetModel")
+        container.loadPersistentStores { description, error in
+            if error==nil{
+                print("successfully load core data")
+            }
+        }
+        return container
+    }()
     var window: UIWindow?
 
 
@@ -19,7 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window=UIWindow(windowScene: windowScene)
 //        window?.windowScene=windowScene
-        window.rootViewController=ViewController()
+        let navController=UINavigationController(rootViewController: ViewController(container: container))
+        window.rootViewController=navController
         window.makeKeyAndVisible()
         self.window=window
         

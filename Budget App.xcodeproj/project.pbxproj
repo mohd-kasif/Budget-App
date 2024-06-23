@@ -13,6 +13,7 @@
 		4B44DA492C286852008DFDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B44DA482C286852008DFDAD /* Assets.xcassets */; };
 		4B44DA4C2C286852008DFDAD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B44DA4B2C286852008DFDAD /* Base */; };
 		4B44DA552C286C56008DFDAD /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */; };
+		4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4B44DA4B2C286852008DFDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B44DA4D2C286853008DFDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B44DA542C286C56008DFDAD /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
+		4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4B44DA4A2C286852008DFDAD /* LaunchScreen.storyboard */,
 				4B44DA4D2C286853008DFDAD /* Info.plist */,
 				4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */,
+				4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */,
 			);
 			path = "Budget App";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				4B44DA442C286850008DFDAD /* ViewController.swift in Sources */,
 				4B44DA402C286850008DFDAD /* AppDelegate.swift in Sources */,
 				4B44DA422C286850008DFDAD /* SceneDelegate.swift in Sources */,
+				4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
