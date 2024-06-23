@@ -41,6 +41,7 @@ class AddBudgetViewController:UIViewController{
        let label=UILabel()
         label.textColor=UIColor.red
         label.text=""
+        label.font=label.font.withSize(12)
         label.numberOfLines=0
         return label
     }()
@@ -61,8 +62,19 @@ class AddBudgetViewController:UIViewController{
         setupUI()
         
     }
+    
+    private var isValid:Bool{
+        guard let name=nameField.text, let amount=amountField.text else {
+            return false
+        }
+        return !name.isEmpty && !amount.isEmpty && amount.isNumeric && amount.isGreaterThan(0)
+    }
     @objc private func buttonAction(){
-        print("clciked")
+        if isValid{
+            errorLabel.text=""
+        } else {
+            errorLabel.text="Unable to save data"
+        }
     }
     
     private func setupUI(){
