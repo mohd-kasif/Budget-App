@@ -69,11 +69,28 @@ class AddBudgetViewController:UIViewController{
         }
         return !name.isEmpty && !amount.isEmpty && amount.isNumeric && amount.isGreaterThan(0)
     }
+    
     @objc private func buttonAction(){
         if isValid{
             errorLabel.text=""
+            saveBudget()
         } else {
-            errorLabel.text="Unable to save data"
+            errorLabel.text="Unable to save. Budget name and amount is required"
+        }
+    }
+    
+    private func saveBudget(){
+        guard let name=nameField.text, let amount=amountField.text else {
+            return
+        }
+        do{
+            let budgetEntity=BudgetCategory(context: container.viewContext)
+            budgetEntity.amount=Double(amount) ?? 0.0
+            budgetEntity.name=name
+            try container.viewContext.save()
+            dismiss(animated: true)
+        } catch let error{
+            errorLabel.text="Unable to save "
         }
     }
     
