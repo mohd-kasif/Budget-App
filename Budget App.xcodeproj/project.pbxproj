@@ -15,6 +15,7 @@
 		4B44DA552C286C56008DFDAD /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */; };
 		4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */; };
 		4B44DA5A2C28C1AC008DFDAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA592C28C1AC008DFDAD /* Extension.swift */; };
+		4B44DA5C2C29D8A4008DFDAD /* BudgetDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B44DA542C286C56008DFDAD /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
 		4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 		4B44DA592C28C1AC008DFDAD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4B44DA4D2C286853008DFDAD /* Info.plist */,
 				4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */,
 				4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */,
+				4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */,
 			);
 			path = "Budget App";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				4B44DA402C286850008DFDAD /* AppDelegate.swift in Sources */,
 				4B44DA5A2C28C1AC008DFDAD /* Extension.swift in Sources */,
 				4B44DA422C286850008DFDAD /* SceneDelegate.swift in Sources */,
+				4B44DA5C2C29D8A4008DFDAD /* BudgetDetailViewContoller.swift in Sources */,
 				4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,10 +50,15 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (resultController.fetchedObjects ?? []).count
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index=resultController.object(at: indexPath)
+        let view=BudgetDetailViewContoller(budgetCategory: index, container: container)
+        self.navigationController?.pushViewController(view, animated: true)
+    }
     // Return cell of which items are gonna dispplay
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) ///
+        cell.accessoryType = .disclosureIndicator
         let budgetCategory=resultController.object(at: indexPath)
         var config=cell.defaultContentConfiguration()
         config.text=budgetCategory.name

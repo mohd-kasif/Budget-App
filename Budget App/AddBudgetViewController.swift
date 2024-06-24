@@ -90,7 +90,7 @@ class AddBudgetViewController:UIViewController{
             try container.viewContext.save()
             dismiss(animated: true)
         } catch let error{
-            errorLabel.text="Unable to save "
+            errorLabel.text="Unable to save"
         }
     }
     
