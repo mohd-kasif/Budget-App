@@ -98,7 +98,7 @@ class BudgetDetailViewContoller:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        getTransaction()
+        totalAmount.text=budgetCategory.totalTransaction.formatCurrency()
         
     }
     

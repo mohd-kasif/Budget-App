@@ -26,3 +26,10 @@ extension Double{
         return formatter.string(from: NSNumber(value: self)) ?? "0.0"
     }
 }
+
+extension NSSet{
+    func toArray<T>()->[T]{
+        let array=self.map{$0 as! T}
+        return array
+    }
+}

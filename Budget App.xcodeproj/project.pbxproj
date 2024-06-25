@@ -16,6 +16,8 @@
 		4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */; };
 		4B44DA5A2C28C1AC008DFDAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA592C28C1AC008DFDAD /* Extension.swift */; };
 		4B44DA5C2C29D8A4008DFDAD /* BudgetDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */; };
+		4B44DA5F2C2AD3AE008DFDAD /* BudgetCategroyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA5E2C2AD3AE008DFDAD /* BudgetCategroyCell.swift */; };
+		4B44DA612C2ADE39008DFDAD /* CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44DA602C2ADE39008DFDAD /* CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 		4B44DA592C28C1AC008DFDAD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewContoller.swift; sourceTree = "<group>"; };
+		4B44DA5E2C2AD3AE008DFDAD /* BudgetCategroyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCategroyCell.swift; sourceTree = "<group>"; };
+		4B44DA602C2ADE39008DFDAD /* CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +66,16 @@
 		4B44DA3E2C286850008DFDAD /* Budget App */ = {
 			isa = PBXGroup;
 			children = (
+				4B44DA622C2AE59B008DFDAD /* View Controllers */,
+				4B44DA5D2C2AD39D008DFDAD /* Cells */,
 				4B44DA582C28C199008DFDAD /* Extensions */,
 				4B44DA3F2C286850008DFDAD /* AppDelegate.swift */,
 				4B44DA412C286850008DFDAD /* SceneDelegate.swift */,
-				4B44DA432C286850008DFDAD /* ViewController.swift */,
 				4B44DA482C286852008DFDAD /* Assets.xcassets */,
 				4B44DA4A2C286852008DFDAD /* LaunchScreen.storyboard */,
 				4B44DA4D2C286853008DFDAD /* Info.plist */,
 				4B44DA532C286C56008DFDAD /* BudgetModel.xcdatamodeld */,
-				4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */,
-				4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */,
+				4B44DA602C2ADE39008DFDAD /* CoreDataClass.swift */,
 			);
 			path = "Budget App";
 			sourceTree = "<group>";
@@ -82,6 +86,24 @@
 				4B44DA592C28C1AC008DFDAD /* Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B44DA5D2C2AD39D008DFDAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B44DA5E2C2AD3AE008DFDAD /* BudgetCategroyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4B44DA622C2AE59B008DFDAD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B44DA562C28A7CC008DFDAD /* AddBudgetViewController.swift */,
+				4B44DA432C286850008DFDAD /* ViewController.swift */,
+				4B44DA5B2C29D8A3008DFDAD /* BudgetDetailViewContoller.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +180,9 @@
 				4B44DA442C286850008DFDAD /* ViewController.swift in Sources */,
 				4B44DA402C286850008DFDAD /* AppDelegate.swift in Sources */,
 				4B44DA5A2C28C1AC008DFDAD /* Extension.swift in Sources */,
+				4B44DA5F2C2AD3AE008DFDAD /* BudgetCategroyCell.swift in Sources */,
 				4B44DA422C286850008DFDAD /* SceneDelegate.swift in Sources */,
+				4B44DA612C2ADE39008DFDAD /* CoreDataClass.swift in Sources */,
 				4B44DA5C2C29D8A4008DFDAD /* BudgetDetailViewContoller.swift in Sources */,
 				4B44DA572C28A7CC008DFDAD /* AddBudgetViewController.swift in Sources */,
 			);

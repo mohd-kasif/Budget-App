@@ -31,7 +31,9 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor=UIColor.white
         setupUI()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        //registering cell
+        tableView.register(BudgetCategroyCell.self, forCellReuseIdentifier: "Cell")
     }
     
     @objc func addBudgetCategory(_ item:UIBarButtonItem){
@@ -55,15 +57,36 @@ class ViewController: UITableViewController {
         let view=BudgetDetailViewContoller(budgetCategory: index, container: container)
         self.navigationController?.pushViewController(view, animated: true)
     }
+    
     // Return cell of which items are gonna dispplay
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell=tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) ///
+        guard let cell=tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? BudgetCategroyCell else {
+            return BudgetCategroyCell(style: .default, reuseIdentifier: "Budget")
+        } ///
         cell.accessoryType = .disclosureIndicator
         let budgetCategory=resultController.object(at: indexPath)
-        var config=cell.defaultContentConfiguration()
-        config.text=budgetCategory.name
-        cell.contentConfiguration=config
+        cell.configure(budgetCategory)
+//        var config=cell.defaultContentConfiguration()
+//        config.text=budgetCategory.name
+//        cell.contentConfiguration=config
         return cell
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let budget=resultController.object(at: indexPath)
+            deleteCategory(budget)
+        } else {
+            
+        }
+    }
+    private func deleteCategory(_ budget:BudgetCategory){
+        container.viewContext.delete(budget)
+        do{
+            try container.viewContext.save()
+        } catch let error{
+            print(error.localizedDescription)
+        }
+        
     }
 }
 
@@ -73,3 +96,4 @@ extension ViewController:NSFetchedResultsControllerDelegate{
         tableView.reloadData() // we are just reloading the tableView
     }
 }
+
